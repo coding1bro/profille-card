@@ -1,14 +1,82 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<h1>Welcome to my Card</h1>
-</body>
+  
+  <div id="wrapper">
+    <div id="card">
+      <div class="data" id="data1"></div>
+      <div class="data" id="data2">
 
+        <div id="socialwrapper">
+          <div id="empty">Empty</div>
+          <div id="name">Kevin Simmons</div>
+           <div id="info">Programmer</div>
+           <div id="follow">
+          <div id="following" class="fff">
+            <span id="sp1">369</span><br>Following</div> 
+         <div id="followers" class="fff">
+           <span id="sp2">10238</span><br>Followers</div>
+         </div>
+         <div id="followme">Follow</div>
+        </div>
+      </div>
+      <div class="data" id="data3">Programming is the process of a design and building an executable computer program to accomplish a specific and best computing result.</div>
+    </div>
+  </div>
+  
+  <button id="btn" value="dark" type="submit" onclick="myFunction()"></button>
+  
+  <script src="main.js"></script>
+   <script>
+     function myFunction() {
+       
+       var element1 = document.body;
+       element1.classList.toggle("darkbody");
+       var element2 = document.querySelector('#name');
+       element2.classList.toggle("darkname");
+      var element3 = document.querySelector('#socialwrapper');
+       element3.classList.toggle("darksocialwrapper");
+       var element4 = document.querySelector('#data3');
+       element4.classList.toggle("darkdata3");
+       var element5 = document.querySelector('#followme');
+       element5.classList.toggle("darkfollowme");
+       var element6 = document.querySelector('#sp1');
+       element6.classList.toggle("darksp1");
+       var element7 = document.querySelector('#sp2');
+       element7.classList.toggle("darksp2");  
+        var element8 = document.querySelector('#followers');
+         element8.classList.toggle("darkfollowers");
+        var element9 = document.querySelector('#following');
+         element9.classList.toggle("darkfollowing");     
+       var element10 = document.querySelector('#follow');
+       element10.classList.toggle("darkfollow");
+       var element11 = document.querySelector('#follow');
+       element11.classList.toggle("darkfollow");
+       var element12 = document.querySelector('#card');
+       element12.classList.toggle("darkcard");
+       var element13 = document.querySelector('#data1');
+       element13.classList.toggle("darkdata1");
+       var element14 = document.querySelector('#wrapper');
+       element14.classList.toggle("darkwrappervar");
+       var element15 = document.querySelector('#btn');
+       element15.classList.toggle("darkmoon");
+       
+      navigator.vibrate(50);
+     }
+   </script>
+</body>
 </html>

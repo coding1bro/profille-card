@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
+     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+     height: 100vh;
+     width: 100vw;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#wrapper{
+  min-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid #53BA83;
+  --bxsdw:0px 5px 20px -3px #0E0E0E;
+}
+#card{
+  background-color: white;
+  width: 300px;
+  height: 500px;
+  border-radius: 30px;
+  box-shadow: 0px 10px 25px 0.5px #303030;
+  backface-visibility:hidden;
+}
+#data1{
+  height: 125px;
+  background-color:  bl;
+  border-top-left-radius :30px;
+  border-top-right-radius :30px;
+  background-image: url(https://images.unsplash.com/photo-1606858621606-921c3792ca1d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80);
+  background-image:url(cover.jpeg);
+  background-size:110%;
+}
+#data2 {
+  height: 250px;
+  background-color:white;
+  border: 0px solid #000;
+}
+#data3 {
+  height: 125px;
+  background-color: white;
+  border-bottom-left-radius :30px;
+  border-bottom-right-radius :30px;
+  padding: 15px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+#socialwrapper{
+  text-align: center ;
+  display: grid;
+  justify-content:center;
+}
+#empty{
+  height: 44px;
+  border: 0.1px solid #000;
+  visibility:hidden ;
+  position: relative;
+}
+#empty:before{
+  content: "";
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border-radius :50%;
+  background-color:transparent;
+  visibility: visible;
+  margin: auto;
+  position: absolute;
+  top :0px;bottom: 40px;left: 0px;right: 0px;
+  background-image: url(https://images.unsplash.com/photo-1530648648507-b9056726849a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80);
+  background-size: 125%;
+  background-position:35% 60%;
+  box-shadow: 0px 5px 25px -5px #0E0E0E;
+  box-shadow: var(--bxsdw);
+  animation: scale 2s infinite 0s;
+  animation-timing-function: linear;
+}
+#name{
+  margin-top: 15px;
+  font-size: 25px;
+  border: 0px solid #000;
+  font-family: 'Montserrat', sans-serif;
+}
+#info{
+  font-size: 13px ;
+  font-weight: 600;
+  border: 0px solid #000;
+  color:#ADB5BD;
+  font-family: 'Montserrat', sans-serif;
+
+}
+#following{
+  background-color: white;
+  width: 140px;
+  height: 80px;
+  color: #ADB5BD;
+  opacity: 0.8;
+
+}
+#followers{
+ background-color: white;
+  width: 140px;
+  height:80px;
+  color: #ADB5BD;
+  opacity: 0.8;
+
+  
+}
+#follow{
+  margin-top: 10px;
+  display: flex;
+  border: 0px solid #000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+
+}
+span{
+  font-family: 'Abel',sans-serif;
+  font-weight: 900;
+  font-size: 35px;
+  color:#09A6F3 ;
+}
+#followme{
+  text-align: center;
+  width: 100%;
+  height: 45px;
+  font-size: 18px;
+  line-height: 45px;
+  margin-top:10px;
+  border-radius: 30px;
+  background-color: #FFBD00;
+  font-family: 'Montserrat', sans-serif;
+}
+@keyframes scale{
+  0%,50%,100%{transform: scale(1)}
+  25%{transform :scale(1.05)}
+  75%{transform :scale(0.9)}
+}
+button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  position:absolute;
+  top:5px ;left: 5px;
+  background-image: url(moon.svg);
+  background-size: 70%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color:transparent;
+  box-shadow: 0px 0px 10px -5px black;
+}
+#btn{transition: 1s;}
+.darkbody{
+  background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
+  background-size: cover;
+}
+
+.darksocialwrapper{
+  background-color: black !important;
+}
+.darkdata3,.darkname{
+  color: white;
+  background-color: black !important ;
+}
+.darkfollowme{
+  color: white !important;
+  background-color: #007FFF !important;
+}
+.darkfollowing,.darkfollowers{
+  background-color: black !important;
+  color: #777672 !important;
+}
+.darkfollow{
+  color: white !important;
+}
+.darksp1,.darksp2{
+  color: #FDFF12 !important;
+  opacity: 1 !important;
+}
+.darkcard{
+    box-shadow: 0px 0px 15px -5px #FFFFFF !important;
+}
+.darkdata1 {
+  box-shadow: 0px 0px 10px -5px #FFFFFF !important;
+}
+.darkempty {
+  box-shadow: 0px 0px 100px -5px #FFFFFF !important;
+}
+.darkwrappervar{
+  --bxsdw:0px 5px 15px -5px white !important;
+}
+.darkmoon{
+  background-image:url(sun.svg);
+  box-shadow: 0px 0px 10px -5px white !important;
+  transition: 1s ;
+
+}
